@@ -26451,3 +26451,1372 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:00:06 +0300 2012
 Served asset /application.js - 304 Not Modified (1ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20120321000633)
+Migrating to CreateKuls (20120326141843)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/users/index" for 127.0.0.1 at Mon Mar 26 21:20:49 +0300 2012
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:217:in `each'
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:217:in `constantize'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:62:in `controller_reference'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:47:in `controller'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:26:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  omniauth (1.0.3) lib/omniauth/strategy.rb:168:in `call!'
+  omniauth (1.0.3) lib/omniauth/strategy.rb:148:in `call'
+  omniauth (1.0.3) lib/omniauth/builder.rb:42:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__785690376__call__4__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at Mon Mar 26 21:20:50 +0300 2012
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:217:in `each'
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:217:in `constantize'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:62:in `controller_reference'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:47:in `controller'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:26:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  omniauth (1.0.3) lib/omniauth/strategy.rb:168:in `call!'
+  omniauth (1.0.3) lib/omniauth/strategy.rb:148:in `call'
+  omniauth (1.0.3) lib/omniauth/builder.rb:42:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__785690376__call__4__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:20:52 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+Compiled application.css  (3ms)  (pid 18093)
+Compiled application.js  (11ms)  (pid 18093)
+  [1m[36mKul Load (4.8ms)[0m  [1mSELECT `kuls`.* FROM `kuls` WHERE `kuls`.`id` = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 259ms (Views: 253.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /application.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /sessions.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (107ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:53 +0300 2012
+Served asset /application.js - 304 Not Modified (41ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:20:55 +0300 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/auth/google" for 127.0.0.1 at Mon Mar 26 21:20:57 +0300 2012
+
+
+Started GET "/auth/google/callback?oauth_verifier=HVRPz-XcOy8qsk2nTNRsOeuv&oauth_token=4%2FVp1kM6VfPCvg-alkSg1ZXSH4NRMe" for 127.0.0.1 at Mon Mar 26 21:21:01 +0300 2012
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"4/Vp1kM6VfPCvg-alkSg1ZXSH4NRMe", "oauth_verifier"=>"HVRPz-XcOy8qsk2nTNRsOeuv", "provider"=>"google"}
+  [1m[35mKul Load (0.4ms)[0m  SELECT `kuls`.* FROM `kuls` WHERE `kuls`.`uid` = 'sem@bil.omu.edu.tr' AND `kuls`.`provider` = 'google' LIMIT 1
+Redirected to http://localhost:3000/users/index
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/index" for 127.0.0.1 at Mon Mar 26 21:21:04 +0300 2012
+
+ActionController::RoutingError (uninitialized constant UsersController):
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:218:in `constantize'
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:217:in `each'
+  activesupport (3.2.1) lib/active_support/inflector/methods.rb:217:in `constantize'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:62:in `controller_reference'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:47:in `controller'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:26:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.1) lib/action_dispatch/routing/route_set.rb:589:in `call'
+  omniauth (1.0.3) lib/omniauth/strategy.rb:168:in `call!'
+  omniauth (1.0.3) lib/omniauth/strategy.rb:148:in `call'
+  omniauth (1.0.3) lib/omniauth/builder.rb:42:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.1) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `_run__785690376__call__4__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/auth/google/callback?oauth_verifier=HVRPz-XcOy8qsk2nTNRsOeuv&oauth_token=4%2FVp1kM6VfPCvg-alkSg1ZXSH4NRMe" for 127.0.0.1 at Mon Mar 26 21:21:09 +0300 2012
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at Mon Mar 26 21:21:09 +0300 2012
+
+ActionController::RoutingError (No route matches [GET] "/auth/failure"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at Mon Mar 26 21:22:28 +0300 2012
+
+ActionController::RoutingError (No route matches [GET] "/auth/failure"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+  [1m[36mKul Load (5.6ms)[0m  [1mSELECT `kuls`.* FROM `kuls` WHERE `kuls`.`id` = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 139ms (Views: 132.0ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /application.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (71ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:32 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:33 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:33 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:33 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:33 +0300 2012
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:33 +0300 2012
+Served asset /application.js - 304 Not Modified (45ms)
+
+
+Started GET "/signout" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:22:35 +0300 2012
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/auth/google" for 127.0.0.1 at Mon Mar 26 21:22:37 +0300 2012
+
+
+Started GET "/auth/google/callback?oauth_verifier=2n04elFtQI-UaAVyyuJV6F6M&oauth_token=4%2FOhb2GcvTVI7MWCco1Lkd6C-qcRG_" for 127.0.0.1 at Mon Mar 26 21:22:41 +0300 2012
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at Mon Mar 26 21:22:42 +0300 2012
+
+ActionController::RoutingError (No route matches [GET] "/auth/failure"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at Mon Mar 26 21:23:53 +0300 2012
+
+ActionController::RoutingError (No route matches [GET] "/auth/failure"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at Mon Mar 26 21:23:54 +0300 2012
+
+ActionController::RoutingError (No route matches [GET] "/auth/failure"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 107ms (Views: 106.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:01 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (82ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:02 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:02 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:02 +0300 2012
+Served asset /sessions.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:24:02 +0300 2012
+Served asset /application.js - 304 Not Modified (41ms)
+
+
+Started GET "/auth/google" for 127.0.0.1 at Mon Mar 26 21:24:03 +0300 2012
+
+
+Started GET "/auth/google/callback?oauth_verifier=lDH9KVFGhLfxgX6eHyrojKJ7&oauth_token=4%2FvA75N2AOBJtFpady6_6wokCWidBG" for 127.0.0.1 at Mon Mar 26 21:24:07 +0300 2012
+
+
+Started GET "/auth/failure?message=invalid_credentials" for 127.0.0.1 at Mon Mar 26 21:24:08 +0300 2012
+
+ActionController::RoutingError (No route matches [GET] "/auth/failure"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.1) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.1) lib/rails/commands.rb:55
+  railties (3.2.1) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.1) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /application.css - 200 OK (64ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /bootstrap_and_overrides.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /sessions.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:15 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:16 +0300 2012
+Served asset /twitter/bootstrap.js - 200 OK (36ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:16 +0300 2012
+Served asset /bootstrap.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:16 +0300 2012
+Served asset /sessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:32:16 +0300 2012
+Served asset /application.js - 200 OK (116ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:34:19 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Compiled bootstrap_and_overrides.css  (3077ms)  (pid 18422)
+Compiled application.css  (63ms)  (pid 18422)
+Completed 200 OK in 3176ms (Views: 3175.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /bootstrap_and_overrides.css - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:22 +0300 2012
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:34:52 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Compiled bootstrap_and_overrides.css  (3444ms)  (pid 18422)
+Compiled application.css  (3ms)  (pid 18422)
+Completed 200 OK in 3545ms (Views: 3544.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /application.css - 304 Not Modified (90ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /bootstrap_and_overrides.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:34:56 +0300 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 21:35:26 +0300 2012
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.1ms)
+Compiled bootstrap_and_overrides.css  (3873ms)  (pid 18422)
+Compiled application.css  (3ms)  (pid 18422)
+Completed 200 OK in 4004ms (Views: 4003.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /bootstrap_and_overrides.css - 200 OK (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Mar 26 21:35:31 +0300 2012
+Served asset /application.js - 304 Not Modified (1ms)
