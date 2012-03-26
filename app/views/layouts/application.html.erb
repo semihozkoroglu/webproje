@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webproje</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Kampüs Kart</a>
+          <ul class="nav">
+            <li><a href="/home">Anasayfa</a></li>
+            <li><a href="/about">Hakkında</a></li>
+            <li><a href="/contact">İletişim</a></li>
+          </ul>
+          <ul class="nav nav-pills" style="float:right;">
+			<li class="dropdown">
+				<% if current_user %>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Hoşgeldin <%= current_user.name %>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<%= link_to "Sign Out", signout_path %>
+					</ul>
+				<% else %>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Giriş Yapın!
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<%= link_to "Sign in with Google", "/auth/google" %>
+					</ul>
+				<% end %>
+			</li>
+		</ul>
+ 		</div>
+	  </div>
+	</div>
+</head>
+<body>
+	<div class="container">
+		<%= yield %>
+  </div>
+</body>
+</html>

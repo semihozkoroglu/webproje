@@ -1,0 +1,66 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table.login {
+    border-spacing: 5px;
+    border-collapse: separate;
+		margin: 0 auto;
+		margin-top: 150px;
+}
+
+table.login th,
+table.login td {
+    padding: 4px;
+    font-size: 13px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+table.login input[type=text],
+table.login input[type=password]{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8px;
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+    width: 220px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+table.login input[type=text]:focus,
+table.login input[type=password]:focus {
+    outline: 0;
+    border: 1px solid #35addf;
+}
+
+table.login td.label {
+    text-align: right;
+    color: #333;
+		background-color: #fff;
+    width: 60px;
+    font-weight: bold;
+    font-size: 11px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+table.login td.field {
+    width: 220px;
+    background: #ededed;
+}
+table.login td.select{
+    border:1px solid #bdc7d8;
+    font:   13px Arial, Helvetica, sans-serif;
+    padding:3px;
+    background:#fff;
+    width:  158px;
+    height: 27px;
+    color:  #585858;
+}
+

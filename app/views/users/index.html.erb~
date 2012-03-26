@@ -1,0 +1,3 @@
+<% if sessions[:user_id] %>
+	<%= @message %>
+<%end %>
