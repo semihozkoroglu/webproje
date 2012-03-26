@@ -20,7 +20,7 @@
 	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
 	-moz-box-shadow:0px 0px 20px #234868;
 	-webkit-box-shadow:0px 0px 20px #234868;
-	box-shadow:0px 0px 10px #234868;
+	box-shadow:0px 0px 20px #234868;
 }
 .banner {
 	padding: 25px;
