@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120326141843) do
+ActiveRecord::Schema.define(:version => 20120326191616) do
 
   create_table "kuls", :force => true do |t|
     t.string   "provider"
@@ -21,16 +21,8 @@ ActiveRecord::Schema.define(:version => 20120326141843) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "isim"
-    t.string   "soyisim"
-    t.string   "email"
-    t.string   "password"
-    t.integer  "tckimlik"
-    t.string   "telefon"
-    t.date     "dogum_tarihi"
-    t.string   "unvan"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

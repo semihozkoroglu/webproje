@@ -45,7 +45,7 @@
 		<div class="banner">
 			<ul class="nav nav-tabs">
   			<li class="active">
-    			<a href="#"><strong>Kart Bilgileri</strong></a>
+    			<strong><a href="#">Kart Bilgileri</a></strong>
   			</li>
   			<li><a href="#">Kullanım Alanları</a></li>
   			<li><a href="#">Bakiye Sorgulama</a></li>
