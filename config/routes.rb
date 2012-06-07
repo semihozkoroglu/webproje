@@ -1,7 +1,7 @@
 Webproje::Application.routes.draw do
 
 	get "/users/about"
-  get "sirkets/index"
+	get "sirkets/index"
 
 	post 'users/login'
 	post 'users/update_user'
