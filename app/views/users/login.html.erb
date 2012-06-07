@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag "login" %>
+
+<%= form_tag :action => 'login' do %>
+  <table class="login" >
+    <tr>
+      <td class="label"> Kullanıcı Numarası veya İsmi : </td>
+      <td class="field"><%= text_field_tag :number, "", :placeholder => "Kullanıcı Numaranızı giriniz" %></td>
+    </tr>
+    <tr>
+      <td class="label"> Parola : </td>
+      <td class="field"><%= password_field_tag :password, "", :placeholder => "Kullanıcı parolasını yazınız" %></td>
+    </tr>
+    <tr>
+		 <td></td>
+		 <td>
+       	<button type="submit" class="btn">Giriş Yapın</button>
+		 </td>
+    </tr>
+  </table>
+<% end %>
+

@@ -1,0 +1,58 @@
+<%= javascript_include_tag 'jquery-1.7.1.min.js' %>
+<%= javascript_include_tag 'jquery.hashchange.min.js' %>
+<%= javascript_include_tag 'jquery.easytabs.min.js' %>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+<div id="tab-container" class='tab-container'>
+  <ul class="nav nav-tabs" id="myTab">
+   <li><a href="/admins/anasayfa#tab1">Şirketler</a></li>
+   <li><a href="/admins/anasayfa#tab2">Kullanıcılar</a></li>
+   <li class="active"><a>Tüm Satışlar</a></li>
+ </ul>
+  <div class='panel-container'>
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="bilgi" >
+  <thead>
+      <tr>
+        <th>Şatış Noktası</th>
+        <th>Müşteri</th>
+        <th>Satılan Ürün</th>
+        <th>Birim Fiyatı</th>
+        <th>Adet</th>
+        <th>Saat</th>
+        <th>Tarih</th>
+        <th>Satış Tutarı</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    <% @sirket_harcama.each do |u| %>
+			<% @toplam += u.tutar.round(1)*u.adet %>
+      <tr>
+        <td><%= Sube.find(u.sube_id).isim %></td>
+        <td><%= User.find(Card.find(u.card_id).user_id).unvan%></td>
+        <td><%= Urun.find(u.urun_id).isim %></td>
+        <td><%= u.tutar.round(1) %></td>
+        <td><%= u.adet %></td>
+        <td><%= u.zaman.strftime("%I:%M %p") %></td>
+        <td><%= u.zaman.strftime("%Y-%m-%d") %></td>
+        <td><%= u.adet*u.tutar.round(1) %></td>
+			</tr>
+		<% end %>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><strong>Toplam:</strong></td>
+        <td><%= @toplam %></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+</div>

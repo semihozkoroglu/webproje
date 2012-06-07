@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag "login" %>
+
+<%= form_tag :action => 'sifreguncelle' do %>
+  <table class="login" >
+    <tr>
+      <td> Yeni Şifre</td>
+      <td class="field"><%= text_field_tag :number, "", :placeholder => "Yeni şifrenizi giriniz" %></td>
+    </tr>
+    <tr>
+      <td> Yeni şifre tekrar : </td>
+      <td class="field"><%= password_field_tag :password, "", :placeholder => "Yeni şifrenizi giriniz" %></td>
+    </tr>
+    <tr>
+		 <td></td>
+		 <td>
+       	<button type="submit" class="btn">Kaydet</button>
+		 </td>
+    </tr>
+  </table>
+<% end %>
+

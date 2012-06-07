@@ -1,0 +1,68 @@
+<%= javascript_include_tag 'jquery-1.7.1.min.js' %>
+<%= javascript_include_tag 'jquery.hashchange.min.js' %>
+<%= javascript_include_tag 'jquery.easytabs.min.js' %>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+<div id="tab-container" class='tab-container'>
+  <ul class="nav nav-tabs" id="myTab">
+   <li><a href="/admins/anasayfa#tab1">Şirketler</a></li>
+   <li><a href="/admins/anasayfa#tab2">Kullanıcılar</a></li>
+		<li class="active"><a> <%= @user.isim %> bilgileri </a></li>
+ </ul>
+  <div class='panel-container'>
+<%= form_tag :action => 'update_user' do %>
+   <table class="login">
+    <tr>
+      <td > Kullanıcı Numara : </td>
+      <td><input type="text" class="input-xlarge" id="input01" name="number" value=<%=@user.number%>></td>
+    </tr>
+    <tr>
+      <td > Kullanıcı Tc Kimlik No : </td>
+      <td><input type="text" class="input-xlarge" id="input02" name="tc" value=<%=@user.tc%>></td>
+    </tr>
+    <tr>
+      <td > Kullanıcı İsim : </td>
+      <td><input type="text" class="input-xlarge" id="input03" name="isim" value=<%=@user.isim%>></td>
+    </tr>
+    <tr>
+      <td > Kullanıcı Soyisim : </td>
+      <td><input type="text" class="input-xlarge" id="input04" name="soyisim" value=<%=@user.soyisim%>></td>
+    </tr>
+    <tr>
+	    <td > Kullanıcı Email : </td>
+  	    <td><input type="text" class="input-xlarge" id="input05" name="email" value=<%=@user.email%>></td>
+    </tr>
+    <tr>
+      <td > Kullanıcı Telefon : </td>
+        <td><input type="text" class="input-xlarge" id="input06" name="telefon" value=<%=@user.telefon%>></td>
+    </tr>
+    <tr>
+      <td > Kullanıcı Ünvan : </td>
+        <td><input type="text" class="input-xlarge" id="input07" name="unvan" value=<%=@user.unvan%>></td>
+    </tr>
+    <tr>
+      <td > Kullanıcı password : </td>
+        <td><input type="text" class="input-xlarge" id="input08" name="password" value=<%=@user.password%>></td>
+    </tr>
+    <tr>
+      <td > Kullanıcı Dogum Tarihi : </td>
+        <td><input type="text" class="input-xlarge" id="input09" name="dogumgunu" value=<%=@user.dogumgunu%>></td>
+    </tr>
+    <tr>
+      <td><input type="hidden" class="input-xlarge" id="input02" name="id" value="<%=@user.id%>"></td>
+    </tr>
+		<tr>
+			<td> </td>
+  	  <td>
+        <div class="sagtaraf"><button type="submit" class="btn">Düzenle</button>
+				<div class="btn"><%= link_to 'Sil', {:action=>'destroy', :id => @user.id}, :confirm=>"Emin misiniz?", :method=>:delete %></div></div>
+   	 </td>
+		</tr>
+  </table>
+<% end %>
+</div>
+</div>

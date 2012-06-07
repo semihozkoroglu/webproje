@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webproje</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Kampüs Kart</a>
+          <ul class="nav">
+						<li><%= link_to "Anasayfa", "/users/anasayfa" if session[:user_id] %></li>
+						<li><%= link_to "Anasayfa", "/sirkets/anasayfa" if session[:sirket_id] %></li>
+            <li><a href="/about">Hakkında</a></li>
+            <li><a href="/contact">İletişim</a></li>
+          </ul>
+          <ul class="nav nav-pills" style="float:right;">
+			<li class="dropdown">
+				<% if current_user %>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Hoşgeldin <%= current_user.isim %>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<%= link_to "Bilgilerim", "/users/bilgilerim" if session[:user_id] %>
+						<%= link_to "Bilgilerim", "/sirkets/bilgilerim" if session[:sirket_id] %>
+						<%= link_to "Bilgilerim", "/admins/bilgilerim" if session[:admin_id] %>
+						<%= link_to "Çıkış Yap", signout_path %>
+					</ul>
+				<% else %>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						Giriş Yapın!
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<form class="well form-inline" action="/users/login" method="post">
+						  <input type="text" class="input-medium" name="number" placeholder="Kullanıcı Numarası">
+						  <input type="password" class="input-medium" name="password" placeholder="Password">
+						  <button type="submit" class="btn">Giriş Yap!</button>
+						</form>
+					</ul>
+				<% end %>
+			</li>
+		</ul>
+ 		</div>
+	  </div>
+	</div>
+</head>
+<body>
+	<div class="container">
+			<%if flash[:error] %>
+				<div id="my-alert" class="alerterror">
+					<a class="close" data-dismiss="alert" href="#my-alert">&times;</a>
+					<%=flash[:error]%>
+				</div>
+			<%elsif flash[:success] %>
+				<div id="my-alert" class="alertsuccess">
+					<a class="close" data-dismiss="alert" href="#my-alert">&times;</a>			
+						<%=flash[:success]%>
+					</div>
+			<%end%>
+	<% if request.env['REQUEST_URI'] == "http://localhost:3000/users/login"%>
+    <div class="minikutu">
+      <%= yield %>
+   	</div>
+	<%else%>
+    <div class="kutu">
+      <%= yield %>
+   	</div>
+	<%end%>
+	</div>
+</body>
+</html>

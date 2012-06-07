@@ -1,0 +1,34 @@
+<%= javascript_include_tag 'jquery-1.7.1.min.js' %>
+<%= javascript_include_tag 'jquery.hashchange.min.js' %>
+<%= javascript_include_tag 'jquery.easytabs.min.js' %>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+
+<div id="tab-container" class='tab-container'>
+	<ul class="nav nav-tabs" id="myTab">
+   <li><a href="#tab1">Şirketler</a></li>
+   <li><a href="#tab2">Kullanıcılar</a></li>
+   <li style="display:none;"><a href="#tab3"></a></li>
+   <li style="display:none;"><a href="#tab4"></a></li>
+ </ul>
+ <div class='panel-container'>
+  <div id="tab1">
+		<%= render "sirket" %>
+		<div class="sagtaraf"><a href="#tab3" class="btn btn-inverse">Şirket Ekle</a></div>
+  </div>
+  <div id="tab2">
+		<%= render "user" %>
+	</div>
+	<div id="tab3">	
+		<%= render "sirketekle" %>
+	</div>
+	<div id="tab4">
+	</div>
+	<div id="tab5">
+	</div>
+  </div>
+</div>

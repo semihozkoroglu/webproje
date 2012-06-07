@@ -1,0 +1,33 @@
+<%= stylesheet_link_tag "login" %>
+
+<%= form_tag :action => 'new' do %>
+   <table class="login">
+    <tr>
+      <td > Şirket İsmi : </td>
+      <td><input type="text" class="input-xlarge" id="input01" name="isim" value=""></td>
+    </tr>
+    <tr>
+      <td > Şirket Adresi : </td>
+      <td><input type="text" class="input-xlarge" id="input03" name="adres" value=""></td>
+    </tr>
+    <tr>
+      <td > Şirket Telefon : </td>
+      <td><input type="text" class="input-xlarge" id="input05" name="telefon" value=""></td>
+    </tr>
+    <tr>
+      <td > Şirket Email : </td>
+      <td><input type="text" class="input-xlarge" id="input07" name="email" value=""></td>
+    </tr>
+    <tr>
+	    <td > Şirket Password : </td>
+  	    <td><input type="text" class="input-xlarge" id="input09" name="sifre" value=""></td>
+    </tr>
+		<tr>
+			<td> </td>
+  	  <td>
+        <div class="sagtaraf"><button type="submit" class="btn">Ekle</button></div>
+   	 </td>
+		</tr>
+  </table>
+<% end %>
+

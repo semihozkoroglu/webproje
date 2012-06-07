@@ -1,0 +1,50 @@
+<%= javascript_include_tag 'jquery-1.7.1.min.js' %>
+<%= javascript_include_tag 'jquery.hashchange.min.js' %>
+<%= javascript_include_tag 'jquery.easytabs.min.js' %>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+<div id="tab-container" class='tab-container'>
+  <ul class="nav nav-tabs" id="myTab">
+   <li><a href="/admins/anasayfa#tab1">Şirketler</a></li>
+   <li><a href="/admins/anasayfa#tab2">Kullanıcılar</a></li>
+  	<li class="active"><a><%= @sirket.isim %> bilgileri</a></li>
+ </ul>
+  <div class='panel-container'>
+	<%= form_tag :action => 'update_sirket' do %>
+ 	 <table class="login" >
+    <tr>
+      <td > Yeni Şirket İsmi : </td>
+      <td><input type="text" class="input-xlarge" id="input01" name="isim" value=<%= @sirket.isim%>></td>
+    </tr>
+    <tr>
+      <td > Yeni Şirket Adresi : </td>
+      <td><input type="text" class="input-xlarge" id="input01" name="adres" value=<%= @sirket.adres %>></td>
+    </tr>
+    <tr>
+      <td > Yeni Şirket Telefon : </td>
+      <td><input type="text" class="input-xlarge" id="input01" name="telefon" value=<%= @sirket.telefon %>></td>
+    </tr>
+    <tr>
+      <td > Yeni Şirket Email : </td>
+      <td><input type="text" class="input-xlarge" id="input01" name="email" value=<%= @sirket.email %>></td>
+    </tr>
+    <tr>
+      <td><input type="hidden" class="input-xlarge" id="input02" name="id" value="<%=@sirket.id%>"></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>
+        <button type="submit" class="btn">Değiştir</button>
+				<div class="btn"><%= link_to 'Sil', {:action => 'destroy', :id => @sirket.id}, :confirm => "Emin misiniz?", :method=>:delete %></div>
+     </td>
+    </tr>
+  </table>
+<% end %>
+
+  </div>
+</div>
+

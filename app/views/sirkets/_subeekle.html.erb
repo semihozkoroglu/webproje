@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag "login" %>
+
+<%= form_tag :action => 'new' do %>
+  <table class="login" >
+    <tr>
+      <td> Şube ismini giriniz : </td>
+      <td class="field"><%= text_field_tag :isim, "", :placeholder => "Şube ismi" %></td>
+    </tr>
+		 <td></td>
+		 <td>
+       	<button type="submit" class="btn">Ekle</button>
+		 </td>
+    </tr>
+  </table>
+<% end %>
+

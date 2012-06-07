@@ -1,0 +1,32 @@
+<script src="/assets/facebox.js"></script>
+<link href="/assets/facebox.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loadingImage : '/assets/loading.gif',
+        closeImage   : '/assets/closelabel.png'
+      })
+    })
+  </script>
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="bilgi" >
+  <thead>
+      <tr>
+        <th>Ürün Adı</th>
+        <th>Birim Fiyatı</th>
+        <th>Adet</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    <% @sirket_urun.each do |u| %>
+      <tr>
+        <td><%= u.isim %></td>
+        <td><%= u.fiyat.round(1) %></td>
+        <td><%= u.adet %></td>
+	      <td style="width:100px"><div class="btn"><%= link_to 'Düzenle',:action => :urun_duzenle, :urun => u.id %></div></td>
+			</tr>
+		<% end %>
+  </tbody>
+</table>
+

@@ -1,9 +1,59 @@
 Webproje::Application.routes.draw do
-	root :to => 'sessions#index'
-	get 'sessions/index'
-#	match '/auth/google/callback', :to => 'sessions#create'
-	match "/auth/:provider/callback" => "sessions#create"
-	match "/signout" => "sessions#destroy", :as => :signout
+
+	get "/users/about"
+  get "sirkets/index"
+
+	post 'users/login'
+	post 'users/update_user'
+	post 'users/update_card'
+	post 'users/bilgilerim'
+	post 'users/sifreguncelle'
+	post 'users/user_forget'
+
+	get 'users/login'
+	get 'users/index'
+	get 'users/bilgilerim'
+	get 'users/update_user'
+	get 'users/anasayfa'
+	get 'users/hesap'
+	get 'users/forget'
+
+	post 'sirkets/bilgilerim'
+	post 'sirkets/update_sirket'
+	post 'sirkets/update_sube'
+	post 'sirkets/new'
+	post 'sirkets/incele'
+	post 'sirkets/yeni_urun'
+	post 'sirkets/update_urun'
+
+	get 'sirkets/anasayfa'
+	get 'sirkets/bilgilerim'
+	get 'sirkets/incele'
+	get 'sirkets/update_sube'
+	get 'sirkets/sube_duzenle'
+	get 'sirkets/urun_duzenle'
+
+	post 'admins/update_sirket'
+	post 'admins/update_user'
+	post 'admins/update_admin'
+	post 'admins/new'
+	post 'admins/incele'
+	get 'admins/incele'
+	get 'admins/bilgilerim'
+	get 'admins/anasayfa'
+	get 'admins/sirket_duzenle'
+	get 'admins/user_duzenle'
+
+	root :to => 'users#index'
+	resource :users
+	resource :sirkets
+	resource :admins
+
+	namespace :user do
+		root :to => 'users#index'
+	end
+
+	match "/signout" => "users#destroy", :as => :signout
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -41,6 +41,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 
-# onmiauth
-gem 'omniauth'
-gem 'omniauth-google'
+# datatable
+gem 'jquery-datatables-rails'
+# mail
+gem "mail", '~> 2.4.0'

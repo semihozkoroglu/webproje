@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require dataTables/jquery.dataTables
+ *= require_tree .
+*/
+.kutu {
+	margin-top: 20px;
+	padding: 25px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow:0px 0px 20px #234868;
+	-webkit-box-shadow:0px 0px 20px #234868;
+	box-shadow:0px 0px 20px #234868;
+}
+.texterror{
+	padding-top: 8px;
+	color: #ff0000;
+	font-size: 19px;
+	font-weight:bold;
+	font-family:Tahoma, sans-serif;
+	text-align: center ;
+}
+.textsuccess{
+  padding-top: 8px;
+  color: #0c8000;
+	font-size: 19px;
+  font-weight:bold;
+	font-family:Tahoma, sans-serif;
+  text-align: center ;
+}
+
+.errorkutu {	
+	margin: auto;
+	float: center;
+	background:#ffabab;
+	width: 400px;
+	height: 35px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow:0px 0px 10px #ff0000;
+  -webkit-box-shadow:0px 0px 10px #ff0000;
+  box-shadow:0px 0px 10px #ff0000;
+}
+.successkutu {
+  margin: auto;
+  float: center;
+  background:#a7ff9e;
+  width: 400px;
+  height: 35px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  -moz-box-shadow:0px 0px 10px #00ff00;
+  -webkit-box-shadow:0px 0px 10px #00ff00;
+  box-shadow:0px 0px 10px #00ff00;
+}
+
+.banner {
+	padding: 25px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow:0px 0px 20px #234868;
+	-webkit-box-shadow:0px 0px 20px #234868;
+	box-shadow:0px 0px 20px #234868;
+}
+
+.etabs { margin: 0; padding: 0; }
+.tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #dddddd; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { text-decoration: underline; }
+.tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #dddddd; }
+.tab a.active { font-weight: bold; }
+.tab-container .panel-container { background: #fff; border: solid #666 0px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+.panel-container { margin-bottom: 10px; }
+
+

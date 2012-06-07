@@ -1,0 +1,22 @@
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="bilgi" >
+  <thead>
+      <tr>
+        <th>Yükleme Noktası</th>
+        <th>Yükleme Miktarı</th>
+        <th>Tarihi</th>
+        <th>Saati</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    <% @user_yukleme.each do |u| %>
+      <tr>
+        <td><%= u.yer %></td>
+        <td><%= u.miktar.round(1) %></td>
+        <td><%= u.created_at.strftime("%Y-%m-%d") %></td>
+        <td><%= u.created_at.strftime("%I:%M %p") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

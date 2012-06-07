@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag "login" %>
+
+<%= form_tag :action => 'yeni_urun' do %>
+  <table class="login" >
+    <tr>
+      <td> Ürün isimi giriniz : </td>
+      <td class="field"><%= text_field_tag :isim, "", :placeholder => "Ürün ismi" %></td>
+    </tr>
+    <tr>
+      <td> Ürün fiyatını giriniz : </td>
+      <td class="field"><%= text_field_tag :fiyat, "", :placeholder => "Ürün fiyatı" %></td>
+    </tr>
+    <tr>
+      <td> Ürün adedini giriniz : </td>
+      <td class="field"><%= text_field_tag :adet, "", :placeholder => "Ürün adedi" %></td>
+    </tr>
+     <td></td>
+     <td>
+        <button type="submit" class="btn">Ekle</button>
+     </td>
+    </tr>
+  </table>
+<% end %>
+

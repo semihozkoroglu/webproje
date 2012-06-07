@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "login" %>
+
+<%= form_tag :action => 'user_forget' do %>
+  <table class="login" >
+    <tr>
+      <td> Email adresinizi giriniz:</td>
+      <td class="field"><%= text_field_tag :email, "", :placeholder => "Email adesinizi giriniz" %></td>
+    </tr>
+   <tr>
+     <td></td>
+     <td>
+        <button type="submit" class="btn">Gönder</button>
+     </td>
+    </tr>
+  </table>
+<% end %>
+

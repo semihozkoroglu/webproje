@@ -1,0 +1,28 @@
+<%= javascript_include_tag 'jquery-1.7.1.min.js' %>
+<%= javascript_include_tag 'jquery.hashchange.min.js' %>
+<%= javascript_include_tag 'jquery.easytabs.min.js' %>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+<div id="tab-container" class='tab-container'>
+	<ul class="nav nav-tabs" id="myTab">
+   <li><a href="#tab1">Yükleme Bilgisi</a></li>
+   <li><a href="#tab2">Kullanım Bilgisi</a></li>
+   <li><a href="#tab3">Kart Bilgisi</a></li>
+ </ul>
+ <div class='panel-container'>
+  <div id="tab1">
+		<%= render "yukleme" %>
+	</div>
+  <div id="tab2">
+		<%= render "harcama" %>
+  </div>
+  <div id="tab3">
+		<%= render "card" %>
+  </div>
+ </div>
+</div>
+

@@ -1,0 +1,36 @@
+<%= javascript_include_tag 'jquery-1.7.1.min.js' %>
+<%= javascript_include_tag 'jquery.hashchange.min.js' %>
+<%= javascript_include_tag 'jquery.easytabs.min.js' %>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#tab-container').easytabs();
+    });
+  </script>
+<div id="tab-container" class='tab-container'>
+  <ul class="nav nav-tabs" id="myTab">
+   <li><a href="/sirkets/anasayfa#tab1">Şubeler</a></li>
+   <li><a href="/sirkets/anasayfa#tab2">Ürünler</a></li>
+   <li class="active"><a><%= @sube.isim %> bilgileri</a></li>
+ </ul>
+  <div class='panel-container'>
+	<%= form_tag :action => 'update_sube' do %>
+ 	 <table class="login" >
+    <tr>
+      <td > Yeni Şube İsmi : </td>
+			<td><input type="text" class="input-xlarge" id="input01" name="post" value=" "></td>
+			<td><input type="hidden" class="input-xlarge" id="input02" name="id" value="<%=@sube.id%>"></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>
+        <button type="submit" class="btn">Değiştir</button>
+				<div class="btn"><%= link_to 'Sil', {:action=>'destroy', :id => @sube.id}, :confirm=>"Emin misiniz?", :method=>:delete %></div></div>
+     </td>
+    </tr>
+  </table>
+<% end %>
+
+  </div>
+</div>
+

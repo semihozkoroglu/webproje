@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require dataTables/jquery.dataTables
  *= require_tree .
 */
 .kutu {
@@ -22,6 +23,7 @@
 	-webkit-box-shadow:0px 0px 20px #234868;
 	box-shadow:0px 0px 20px #234868;
 }
+
 .banner {
 	padding: 25px;
 	-moz-border-radius:5px;
@@ -32,3 +34,14 @@
 	-webkit-box-shadow:0px 0px 20px #234868;
 	box-shadow:0px 0px 20px #234868;
 }
+
+.etabs { margin: 0; padding: 0; }
+.tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #dddddd; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { text-decoration: underline; }
+.tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #dddddd; }
+.tab a.active { font-weight: bold; }
+.tab-container .panel-container { background: #fff; border: solid #666 0px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+.panel-container { margin-bottom: 10px; }
+
+
